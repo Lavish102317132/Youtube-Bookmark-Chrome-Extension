@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YT Bookmarks</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="title">YouTube Bookmarks</div>
+    <button id="addBtn" class="primary" title="Bookmark current timestamp">+ Bookmark</button>
+  </header>
+
+  <main>
+    <div id="status" class="status"></div>
+    <ul id="list" class="list"></ul>
+    <div id="empty" class="empty">No bookmarks yet. Open a YouTube video and click “+ Bookmark”.</div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

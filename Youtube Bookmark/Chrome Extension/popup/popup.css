@@ -1,0 +1,114 @@
+:root{
+  --bg:#0f1115;
+  --card:#171a21;
+  --muted:#9aa4b2;
+  --text:#e6edf3;
+  --accent:#2f81f7;
+  --danger:#ff5c5c;
+  --border:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  width:360px;
+  min-height:420px;
+  background:var(--bg);
+  color:var(--text);
+  font:13px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 12px 10px;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  background:var(--bg);
+}
+.title{
+  font-weight:700;
+  letter-spacing:.2px;
+  font-size:14px;
+}
+.primary{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:8px 10px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+.primary:disabled{opacity:.5; cursor:not-allowed;}
+.status{
+  padding:10px 12px 0;
+  color:var(--muted);
+  min-height:20px;
+}
+.list{
+  list-style:none;
+  padding:10px 8px 12px;
+  margin:0;
+}
+.item{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:10px 10px;
+  margin:8px 4px;
+}
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+.videoTitle{
+  font-weight:700;
+  font-size:13px;
+  margin:0 0 6px;
+  color:var(--text);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  align-items:center;
+}
+.pill{
+  font-size:12px;
+  padding:3px 8px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  color:var(--muted);
+}
+.jump{
+  border:none;
+  background:transparent;
+  color:var(--accent);
+  cursor:pointer;
+  font-weight:700;
+  padding:6px 8px;
+  border-radius:10px;
+}
+.jump:hover{background:rgba(47,129,247,.12)}
+.del{
+  border:none;
+  background:transparent;
+  color:var(--danger);
+  cursor:pointer;
+  font-weight:700;
+  padding:6px 8px;
+  border-radius:10px;
+}
+.del:hover{background:rgba(255,92,92,.12)}
+.empty{
+  padding:16px 12px;
+  color:var(--muted);
+  text-align:center;
+  display:none;
+}
